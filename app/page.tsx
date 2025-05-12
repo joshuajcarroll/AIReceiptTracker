@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Upload } from "lucide-react";
+import { ArrowRight, BarChart, Search, Upload } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -66,12 +66,48 @@ export default function Home() {
                     Drag and drop your PDF receipts for instant scanning and processing.
                   </p>
                   </div>
+                  {/*Feature 2*/}
+                  <div className="flex flex-col items-center space-y-2 border border-gray-200 rounded-lg p-6
+                  dark:border-gray-800">
+                    <div className="p-3 rounded-full bg-green-100 dark:bg-green-900">
+                      <Search className="h-6 w-6 text-green-600 dark:text-green-400" />
+                    </div>
+                    <h3 className="text-xl font-bold">AI-Powered Analysis</h3>
+                    <p className="text-gray-500 dark:text-gray-400 text-center">
+                      Automatically extract and categorize expense data with intelligent AI.
+                    </p>
+                  </div>
+                  {/*Feature 3*/}
+                  <div className="flex flex-col items-center space-y-2 border border-gray-200 rounded-lg p-6
+                  dark:border-gray-800">
+                    <div className="p-3 rounded-full bg-purple-100 dark:bg-purple-900">
+                      <BarChart className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                    </div>
+                      <h3 className="text-xl font-bold">Expense Insights</h3>
+                      <p className="text-gray-500 dark:text-gray-400 text-center">
+                        Generate reports and gain valuable insights from your spending patterns.
+                      </p>
+                    
+                  </div>
               </div>
             </div>
           </div>
         </section>
       {/*Pricing*/}
-
+        <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  Simple Pricing
+                </h2>
+                <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                  Choose the plan that works best for your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       {/*Info*/}
 
       {/*Footer*/}
