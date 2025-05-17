@@ -1,17 +1,15 @@
-//import PDFZone from "@/components/PDFZone";
-// import ReceiptList from "@/components/ReceiptList";
+import PDFDropzone from "@/components/PDFDropzone";
+import ReceiptList from "@/components/ReceiptList";
 
-import PDFDropzone from "@/components/PDFDropzone"
-
-function Receipts() {
+function Receipt() {
   return (
     <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <PDFDropzone />
-            {/*<ReceiptList />*/}
+            <ReceiptList />
         </div>
     </div>
   )
 }
 
-export default Receipts
+export default Receipt
